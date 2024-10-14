@@ -1,6 +1,6 @@
 #teste {
     display: flex;
- 
+    gap: 10px; /* <-- Aqui está o espaço entre os quadrados */
 }
 
 #item{
@@ -8,6 +8,19 @@
     width: 80px;
     height: 80px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: aqua;
+    cursor: pointer;
+}
+
+#item:hover {
+    background-color: blue;
+}
+
+@media (max-width: 400px){
+    body{ 
+        background-color: blueviolet;
+    }
+
+
 }
